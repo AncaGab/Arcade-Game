@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="status">
+		<p>Safe: <span class="score">00</span></p>
+		<p>Bugs accidents: <span class="bugs-acc">00</span></p>
+		<div class="time">
+            <span class="minutes"> 0</span>min:<span class="seconds">0</span>sec
+        </div>
+	</section>
+
+	<section class="modal">
+		<div class="myModal">
+			<p>Congratulation...</p>
+			<p>... you win!  </p> 
+			<p>You finished in:  <span class="finalTime">0</span></p>
+			<button onclick="restartGame()"><p>Play Again?</p>
+		</div>
+	</section>
+
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
