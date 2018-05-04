@@ -3,65 +3,39 @@
 
 The **arcade game** is a game where you have a Player and Enemies (Bugs).
 The main objective of the player is to reach the water, without colliding with the enemies.
-The player can move, up-down-left-right
+The player can move, up-down-left-right!
 
-In order to play or make changes you can clone or download Zip file the repository from 
+In order to play or make changes you can clone or download Zip file the repository from https://github.com/AncaGab/Arcade-Game
 
 ## Table of Contents
 
 * [Instructions](#instructions)
-* [Contributing](#contributing)
 * [Play-Game](#play-game)
 
 
 ## Instructions 
 
-To see specific instructions of Udacity: (https://review.udacity.com/#!/rubrics/591/view).
+To see specific instructions of Udacity: (https://review.udacity.com/#!/rubrics/15/view).
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this prfrontend-nanodegree-arcade-game
+===============================
 
-To get started, open `js/app.js` and start building out the app's functionality
+Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
 
 ## Play-Game
 
 Open index.html with your favorite browser.
 
-The game starts with face down cards.
-In order to play you have to open two cards at a time to see if they are equal.
-If these cards are the same, ie they have the same image, they will remain open, otherwise there will be a removal of the opening.
+The game and the timer starts when you move the player.
+Your main goal is to bring the player to the side of the water. If on the way you clash with the enemy you will be added a point in the "Bugs accident", while if you can reach the water your point will go to "Safe".
 
-The cards symbols in the JavaScript file (`js/app.js`): 
-
-`` ` let listCards = ["fa-diamond", "fa-paper-plane-o", "fa-anchor",  "fa-bolt",  "fa-cube",  "fa-anchor", "fa-leaf", "fa-bicycle", "fa-diamond",  "fa-bomb",  "fa-leaf", "fa-bomb",  "fa-bolt", "fa-bicycle",  "fa-paper-plane-o", "fa-cube"]; 
-`` `
-
-The cards are shuffled through the shuffle function:
-
-`` `function shuffle(array) {
-    ...... 
-        while (currentIndex !== 0) {
-    .....
-         }  
-     return array; 
-     } 
-     shuffle(listCards); ` `` 
-     
-During the game the moves will be recorded, the moves are connected to the stars, the duration of the game
      
 ## Game-Over 
 
-You win when you find all the pairs.
+The game ends when you can bring the player to safety 10 times.
 
-To win the game you must match 8 cards. You lose a star after 10 moves, and another one after 20 moves.
-
-At the end a modal will open containing the stars, moves and time during the game.
+At the end a modal will open containing the time during the game.
 
 Have fun playing !
