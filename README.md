@@ -11,6 +11,7 @@ In order to play or make changes you can clone or download Zip file the reposito
 
 * [Instructions](#instructions)
 * [Play-Game](#play-game)
+* [Game-Over](#game-over)
 
 
 ## Instructions 
