@@ -1,3 +1,4 @@
+// Code for play game 
 // Enemies our player must avoid
 var Enemy = function(x, y, speed) {
     // Variables applied to each of our instances go here,
@@ -16,7 +17,7 @@ var Enemy = function(x, y, speed) {
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
 
-
+// Set the timer to the game
 let resetTimer = 0;
 let finalTime = document.querySelector(".finalTime");
 
@@ -75,7 +76,7 @@ Player.prototype.update = function () {
     if (this.y < 0) {
         score.innerHTML++;
         
-        if(score.innerHTML == 5) {
+        if(score.innerHTML == 10) {
             showModal();
             stopTimer();
         finalTime.innerText = time.innerText;
